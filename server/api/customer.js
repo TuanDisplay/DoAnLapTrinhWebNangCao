@@ -140,4 +140,5 @@ router.get('/orders/customer/:cid', JwtUtil.checkToken, async function(req, res)
     res.json(orders);
 });
 
+console.log("haha")
 module.exports = router;
