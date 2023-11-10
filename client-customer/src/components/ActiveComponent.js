@@ -13,27 +13,20 @@ class Active extends Component {
  
     render(){
         return(
-            <div className="align-center">
-                <h2 className="text-center">ACTIVE ACCOUNT</h2>
-                <form>
-                    <table className="align-center">
-                        <tbody>
-                            <tr>
-                                <td>ID</td>
-                                <td><input type="text" value={ this.state.txtID } onChange={(e) => { this.setState ({ txtID: e.target.value }) }} /></td>
-                            </tr>
-                            <tr>
-                                <td>Token</td>
-                                <td><input type="text" value={ this.state.txtToken } onChange={(e) => { this.setState ({ txtToken: e.target.value }) }} /></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><input type="submit" value="ACTIVE" onClick={(e) => this.btnActiveClick(e) } /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-            </div>
+            <body>
+                <div className ="active">
+                    <h2 className ="active-heading">ACTIVE ACCOUNT</h2>
+                    <form action="#" class="active-form" autoComplete='off'>
+                        <label for="ID" class="active-label">ID</label>
+                        <input type="ID" id="ID" class="signup-input" 
+                            value ={ this.state.txtID } onChange ={(e) => { this.setState ({ txtID: e.target.value }) }} />
+                        <label for="token" class="active-label">Token</label>
+                        <input type="text" id="token" class="signup-input" 
+                            value ={ this.state.txtToken } onChange ={(e) => { this.setState ({ txtToken: e.target.value }) }} />
+                        <input type ="submit" value ="Active" class="login-submit" onClick ={(e) => this.btnActiveClick(e) }/>
+                    </form>
+                </div>
+            </body>
         );
     }
 
