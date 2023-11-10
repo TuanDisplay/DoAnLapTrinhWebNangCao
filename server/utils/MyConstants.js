@@ -1,7 +1,7 @@
 const MyConstants = {
     DB_SERVER: 'bookonline.w6kkyy3.mongodb.net',
-    DB_USER: 'thanhhau1912003',
-    DB_PASS: 'h19012003',
+    DB_USER: 'BookOnline',
+    DB_PASS: 'BO123456',
     DB_DATABASE: 'shoppingbook',
     EMAIL_USER: 'thanhhau1912003@gmail.com', // Microsoft mail service
     EMAIL_PASS: 'Hau19012003',
