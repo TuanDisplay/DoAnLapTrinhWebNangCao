@@ -6,7 +6,7 @@ import Login from './components/LoginComponent';
 import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom';
 
-// thay
+
 class App extends Component{
   render(){
     return(
