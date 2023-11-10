@@ -21,39 +21,29 @@ class Myprofile extends Component {
     render(){
         if(this.context.token === '') return (<Navigate replace to ='/login' />) ;
         return(
-            <div className="align-center">
-                <h2 className="text-center">MY PROFILE</h2>
-                <form>
-                    <table className="align-center">
-                        <tbody>
-                            <tr>
-                                <td>Username</td>
-                                <td><input type="text" value={ this.state.txtUsername } onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
-                            </tr>
-                            <tr>
-                                <td>Password</td>
-                                <td><input type="password" value={ this.state.txtPassword } onChange={(e) => { this.setState({ txtPassword: e.target.value }) }} /></td>
-                            </tr>
-                            <tr>
-                                <td>Name</td>
-                                <td><input type="text" value={ this.state.txtName } onChange={(e) => { this.setState({ txtName: e.target.value }) }} /></td>
-                            </tr>
-                            <tr>
-                                <td>Phone</td>
-                                <td><input type="tel" value={ this.state.txtPhone } onChange={(e) => { this.setState({ txtPhone: e.target.value }) }} /></td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td><input type="email" value={ this.state.txtEmail } onChange={(e) => { this.setState({ txtEmail: e.target.value }) }} /></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><input type="submit" value="UPDATE" onClick={(e) => this.btnUpdateClick(e) } /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-            </div>
+            <body>
+                <div className ="signup">
+                    <h2 className ="signup-heading">MY PROFILE</h2>
+                    <form action="#" class="signup-form" autoComplete='off'>
+                        <label for="username" class="signup-label">Username</label>
+                        <input type="text" id="username" class="signup-input" 
+                            value ={ this.state.txtUsername } onChange ={(e) => { this.setState({ txtUsername: e.target.value }) }} />
+                        <label for="password" class="signup-label">Password</label>
+                        <input type="password" id="password" class="signup-input" 
+                            value ={ this.state.txtPassword } onChange ={(e) => {this.setState ({ txtPassword: e.target.value }) }} />
+                        <label for="name" class="signup-label">Name</label>
+                        <input type="text" id="name" class="signup-input" 
+                            value ={ this.state.txtName } onChange ={(e) => { this.setState ({ txtName: e.target.value }) }} />
+                        <label for="phone" class="signup-label">Phone</label>
+                        <input type="text" id="phone" class="signup-input" 
+                            value ={ this.state.txtPhone } onChange ={(e) => { this.setState ({ txtPhone: e.target.value }) }} />
+                        <label for="email" class="signup-label">Email</label>
+                        <input type="email" id="email" class="signup-input" 
+                            value ={ this.state.txtEmail } onChange ={(e) => { this.setState ({ txtEmail: e.target.value }) }} />
+                        <input type ="submit" value ="Update" class="login-submit" onClick ={(e) => this.btnSignupClick(e)} />
+                    </form>
+                </div>
+            </body>  
         );
     }
 
