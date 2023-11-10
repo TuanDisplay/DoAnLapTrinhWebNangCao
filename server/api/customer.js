@@ -138,7 +138,5 @@ router.get('/orders/customer/:cid', JwtUtil.checkToken, async function(req, res)
     const _cid = req.params.cid;
     const orders = await OrderDAO.selectByCustID(_cid);
     res.json(orders);
-});
-
-console.log("haha")
+})
 module.exports = router;
